@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title></title>
+<link rel="stylesheet" href="style.css" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+</head>
+
+<body>
+
+	<div class="krakatoa">
+		<img src="img/1.png" />
+		<img src="img/2.png" />
+		<img src="img/3.png" />
+		<img src="img/4.png" />
+	</div>
+
+	<div class="krakatoa" data-settings="{ items : 2, autoplay : true, loop : true }">
+		<img src="img/1.png" />
+		<img src="img/2.png" />
+		<img src="img/3.png" />
+		<img src="img/4.png" />
+	</div>
+
+<script src="http://libs.baidu.com/jquery/1.7.2/jquery.min.js"></script>
+<script src="jquery.krakatoa.js"></script>
+
+<script>
+	$(window).on('load',function(){
+		$('.krakatoa').krakatoa( { width: '500px', height: 'auto' });
+	});
+</script>
+
+</body>
+</html>
